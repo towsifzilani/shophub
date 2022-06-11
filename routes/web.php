@@ -14,4 +14,6 @@ use App\Http\Controllers\Site;
 |
 */
 
-Route::get('/',[Site::class,'index']);
+Route::get('/',[Site::class,'index'])->name('site-home');
+Route::get('blog',[Site::class,'blog_list'])->name('site-blogs');
+Route::get('contact',[Site::class,'site_contact'])->name('site-contact');
