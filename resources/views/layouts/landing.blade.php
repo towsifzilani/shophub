@@ -33,10 +33,7 @@
 	@yield('content')
 	
 	@include('site.footer')
-
 	
-
-  
     <script src="{{ asset('assets/js/jquery.js') }} "></script>
 	<script src="{{ asset('assets/js/bootstrap.min.js') }} "></script>
 	<script src="{{ asset('assets/js/jquery.scrollUp.min.js') }} "></script>
