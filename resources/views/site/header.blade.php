@@ -5,8 +5,8 @@
 					<div class="col-sm-6">
 						<div class="contactinfo">
 							<ul class="nav nav-pills">
-								<li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-								<li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+								<li><a href="#"><i class="fa fa-phone"></i> +8801725106754</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> info@shophub.net</a></li>
 							</ul>
 						</div>
 					</div>
@@ -86,7 +86,7 @@
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="{{ route('site-home') }}" class="{{ Request::path()=='' ? 'active':'' }}">Home</a></li>
-								<li><a href="#" class="{{ Request::path()=='shop' ? 'active':'' }}">Shop</a></li> 
+								<li><a href="{{ route('site-shops') }}" class="{{ Request::path()=='shop' ? 'active':'' }}">Shop</a></li> 
 								<li><a href="{{ route('site-blogs') }}" class="{{ Request::path()=='blog' ? 'active':'' }}">Blog</a></li> 
 								<!-- <li><a href="#">404</a></li> -->
 								<li><a href="{{ route('site-contact') }}" class="{{ Request::path()=='contact' ? 'active':'' }}">Contact</a></li>
