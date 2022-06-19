@@ -45,4 +45,10 @@ class Site extends Controller
         $data['view'] = 'site.shop';
         return $this->loadview($data);
     }
+
+    public function login_page()
+    {
+        $data['view'] = 'site.login';
+        return $this->loadview($data);
+    }
 }
