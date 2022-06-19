@@ -39,4 +39,10 @@ class Site extends Controller
         $data['view'] = 'site.contact';
         return $this->loadview($data);
     }
+
+    public function load_shop_page()
+    {
+        $data['view'] = 'site.shop';
+        return $this->loadview($data);
+    }
 }
