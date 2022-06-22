@@ -1,1 +1,0 @@
-whishlist.blade.php
