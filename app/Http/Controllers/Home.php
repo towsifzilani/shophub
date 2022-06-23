@@ -18,4 +18,11 @@ class Home extends Controller
 	{
 
 	}
+
+	public function viewLoader($resources=[])
+	{
+		$view = $resources['view'] ?? 'site.index';
+
+		return view($view,$resources);
+	}
 }
