@@ -14,11 +14,15 @@
 								name="engageType" 
 								id="engageType" 
 								value="login">
-							<input type="email" placeholder="Enter Email"/>
-							<input type="password" placeholder="Enter Password"/>
+							<input type="email" 
+								placeholder="{{ __('Enter email') }}">
+							<input type="password" 
+								name="password" 
+								id="password" 
+								placeholder="{{__('Enter Password') }}">
 							<span>
 								<input type="checkbox" class="checkbox"> 
-								Keep me signed in
+								{{ __("Keep me signed in") }}
 							</span>
 							<button type="submit" class="btn btn-default">{{ __('Login') }}</button>
 						</form>
