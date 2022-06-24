@@ -37,10 +37,10 @@
 						<form action="{{ route('site-user-engage') }}" method="POST">
 							@csrf
 							<input type="hidden" name="engageType" id="engageType" value="signup">
-							<input type="text" placeholder="Name"/>
-							<input type="email" placeholder="Email Address"/>
-							<input type="password" placeholder="Password"/>
-							<input type="password" placeholder="confirm Password"/>
+							<input type="text" placeholder="{{ __('Name') }}" id="name" name="name"/>
+							<input type="email" placeholder="{{ __('Email Address') }}" id="email" name="email"/>
+							<input type="password" placeholder="{{ __('Password') }}" id="password" name="password"/>
+							<input type="password" placeholder="{{ __('confirm Password') }}" id="confirm_password" name="confirm_password"/>
 							<button type="submit" class="btn btn-default">{{ __('Signup') }}</button>
 						</form>
 					</div><!--/sign up form-->
