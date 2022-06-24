@@ -48,6 +48,7 @@ class Site extends Home
 
     public function user_engage(Request $request)
     {
-        
+        $engaeType = $request->engageType;
+        echo $engaeType;
     }
 }
