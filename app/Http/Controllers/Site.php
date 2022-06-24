@@ -49,6 +49,20 @@ class Site extends Home
     public function user_engage(Request $request)
     {
         $engaeType = $request->engageType;
-        echo $engaeType;
+        if($engaeType=="" || ($engaeType !="signup" && $engaeType != "login")) return Redirect::route("site-login")->with('status',__('You are trying to access an unaccesible scope.'));
+        if($engaeType=="signup") {
+
+        }
+
+    }
+
+    private function validate_rules($data)
+    {
+        
+    }
+
+    private function validate_error_messages($value='')
+    {
+        // code...
     }
 }
