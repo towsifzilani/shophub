@@ -1,8 +1,7 @@
-@extends('layouts.landing')
+@extends('layouts.site')
 @section('title',__('Blogs'))
 
 @section('content')
-
 <section>
 	<div class="container">
 		<div class="row">
@@ -226,5 +225,4 @@
 		</div>
 	</div>
 </section>
-
 @endsection

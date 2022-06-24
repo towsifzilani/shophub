@@ -1,4 +1,4 @@
-@extends('layouts.landing')
+@extends('layouts.site')
 @section('title',__('Login'))
 
 @section('content')
