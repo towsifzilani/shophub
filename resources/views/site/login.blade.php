@@ -2,6 +2,13 @@
 @section('title',__('Login'))
 
 @section('content')
+	
+	@if(session('status'))
+		<div class="alert alert-info alert-dismissible text-center" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		  <strong>Warning!</strong> {{ session('status') }}
+		</div>
+	@endif
 	<section id="form"><!--form-->
 		<div class="container">
 			<div class="row">
