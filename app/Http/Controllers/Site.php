@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\File;
 
 class Site extends Home
 {
+    public $site_user_id;
+
     public function __construct()
     {
         
@@ -51,6 +53,11 @@ class Site extends Home
         $engaeType = $request->engageType;
         if($engaeType=="" || ($engaeType !="signup" && $engaeType != "login")) return Redirect::route("site-login")->with('status',__('You are trying to access an unaccesible scope.'));
         if($engaeType=="signup") {
+            $rules = [
+                'name' => 'required',
+                'email' => 'required|unique:users,email'
+            ];
+        } else if($engaeType=='login') {
 
         }
 
